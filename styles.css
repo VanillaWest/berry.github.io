@@ -1,0 +1,265 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+PRIMARY COLOR: #0e2664
+SECONDARY COLOR: #54a075
+GREY COLOR: #343a40 #dee2e6
+BACKGROUND COLOR: #0a1d33
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+body {
+  font-family: akshar;
+  color: #343a40;
+  overflow-x: hidden;
+}
+
+header,
+section {
+  margin-bottom: 128px;
+}
+
+footer {
+  background-color: #111e2f;
+}
+
+h1 {
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6cb28a;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #0e2664;
+  text-transform: uppercase;
+}
+
+p {
+  color: #343a40;
+  font-size: 20px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* NAVBAR */
+.nav-bar {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1000px;
+  padding: 24px 8px;
+
+  font-size: 18px;
+}
+
+.nav-container img {
+  height: 48px;
+}
+
+.nav-container a {
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6cb28a;
+  padding: 4px 4px;
+  margin: 8px 16px;
+  transition: color 0.25s ease-out;
+}
+
+.nav-container a:hover {
+  color: #94c7aa;
+  transition: all 0.25s ease-in-out;
+}
+
+/* HERO */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 64px;
+  /* background-color: #111e2f; */
+  background-image: linear-gradient(135.6deg, #111e2f 40%, #0e2664 100%);
+  padding: 228px 48px 128px 48px;
+}
+
+header img {
+  justify-self: end;
+  width: 600px;
+}
+
+.header-text-box {
+  justify-self: start;
+  align-self: center;
+  width: 600px;
+}
+
+.header-text-box p {
+  color: #dee2e6;
+  width: 450;
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #6cb28a;
+  color: #f2f8f4;
+
+  padding: 16px 24px;
+  border-radius: 100px;
+
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.25s ease-out;
+}
+
+.btn:hover {
+  background-color: #94c7aa;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+
+.our-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 48px;
+  row-gap: 80px;
+}
+
+.our-solution-grid-left {
+  justify-self: end;
+  align-self: center;
+}
+
+.our-solution-grid-right {
+  justify-self: start;
+  align-self: center;
+}
+
+.our-solution-grid img {
+  width: 500px;
+  height: auto;
+}
+
+.solution-text-box {
+  width: 500px;
+  padding: 48px;
+}
+
+.solution-text-box h2 {
+  padding-bottom: 16px;
+}
+
+.solution-text {
+  font-size: 24px;
+}
+
+/* FEATURES */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px;
+  padding: 48px 0px;
+
+  background-color: #f8f9fa;
+}
+
+.features-grid-left {
+  justify-self: end;
+  align-self: flex-start;
+}
+
+.features-grid-right {
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.features-text-box {
+  width: 400px;
+  padding: 32px;
+}
+
+.features-icon {
+  width: 44px;
+  height: auto;
+  margin-bottom: 8px;
+  fill: #0e2664;
+}
+
+.features-text-box h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+/* CALL TO ACTION */
+
+.support-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111e2f;
+  padding: 48px 48px 80px 48px;
+}
+
+.support-text-box h2 {
+  font-size: 44px;
+  color: #6cb28a;
+  margin-bottom: 8px;
+}
+
+.support-text-box p {
+  font-size: 24px;
+  color: #dee2e6;
+  margin-bottom: 32px;
+}
+
+.support-text-box a {
+  margin: 8px;
+}
+
+.last-section {
+  margin-bottom: 0px;
+}
+
+footer p {
+  color: #dee2e6;
+  font-size: 16;
+  text-align: center;
+  padding: 2px 2px;
+}
