@@ -27,7 +27,7 @@ BACKGROUND COLOR: #0a1d33
 body {
   font-family: akshar;
   color: #343a40;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 header,
@@ -79,8 +79,6 @@ p {
   justify-content: space-between;
   width: 1000px;
   padding: 24px 8px;
-
-  font-size: 18px;
 }
 
 .nav-container img {
@@ -108,7 +106,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 64px;
-  /* background-color: #111e2f; */
   background-image: linear-gradient(135.6deg, #111e2f 40%, #0e2664 100%);
   padding: 228px 48px 128px 48px;
 }
@@ -262,4 +259,113 @@ footer p {
   font-size: 16;
   text-align: center;
   padding: 2px 2px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  .nav-container {
+    width: 100%;
+    padding: 16px 24px;
+  }
+
+  .nav-container img {
+    height: 36px;
+  }
+
+  .nav-container a {
+    font-size: 19px;
+    padding: 2px 2px;
+    margin: 8px 4px;
+  }
+
+  header {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    row-gap: 32px;
+    padding: 228px auto 128px auto;
+  }
+
+  header img {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-text-box {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .header-text-box p {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .our-solution-grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, 0.5fr);
+    padding: 16px 8px;
+
+    text-align: center;
+    gap: 0px;
+  }
+
+  .our-solution-grid img {
+    width: 100%;
+    padding: 0px 48px;
+    margin-top: 64px;
+  }
+
+  .solution-text-box {
+    width: 100%;
+    padding-top: 16px;
+  }
+
+  .solution-text-box h2 {
+    padding-bottom: 8px;
+  }
+
+  .solutiongrid-1 {
+    grid-row: 1;
+  }
+  .solutiongrid-2 {
+    grid-row: 2;
+  }
+  .solutiongrid-3 {
+    grid-row: 4;
+  }
+  .solutiongrid-4 {
+    grid-row: 3;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features-grid-left {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .features-grid-right {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .support-text-box {
+    text-align: center;
+    padding: 48px 32px 80px 32px;
+  }
 }
