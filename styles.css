@@ -27,7 +27,7 @@ BACKGROUND COLOR: #0a1d33
 body {
   font-family: akshar;
   color: #343a40;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 header,
