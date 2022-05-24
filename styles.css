@@ -272,7 +272,7 @@ footer p {
 
   .nav-container {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px 8px;
   }
 
   .nav-container img {
@@ -282,14 +282,15 @@ footer p {
   .nav-container a {
     font-size: 19px;
     padding: 2px 2px;
-    margin: 8px 4px;
+    margin: 8px 2px;
   }
 
   header {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
-    row-gap: 32px;
-    padding: 228px auto 128px auto;
+    row-gap: 48px;
+    padding: 128px 48px;
+    text-align: center;
   }
 
   header img {
@@ -307,6 +308,7 @@ footer p {
   .header-text-box p {
     width: 100%;
     font-size: 24px;
+    margin-bottom: 32px;
   }
 
   .our-solution-grid {
